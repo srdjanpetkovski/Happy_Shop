@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+/**************************
+variables
+**************************/
+    $fontFamily: 'Roboto', sans-serif;
+    $fontSize: 16px;
+    $orange: #ef7e22;
+    $blue: #2080be;
+    $green: #bad232;
+    $text: #595a5a;
+    $white: #fff;
+    $lightgray: #f2f2f2;
+    $transition: .3s linear;
+
+/**************************
+basic styles
+**************************/
+body {
+    font-family: $fontFamily;
+    font-size: $fontSize;
+    color: $text;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+
+/**************************
+mixins
+**************************/
+
+
+/**************************
+topBar
+**************************/
+.topBar {
+    background-color: $blue;
+    a {
+        color: $white;
+        font-weight: 300;
+        text-transform: uppercase;
+        font-size: 0.8rem;
+    }
+}
+
+/**************************
+navbar
+**************************/
+.navbar {
+    .navbar-brand {
+        img {
+            width: 100px;
+        }
+    }
+    .nav-link {
+        text-transform: uppercase;
+        font-weight: 500;
+        transition: $transition;
+        .fas {
+            color: $orange;
+            transition: $transition;
+            &:hover {
+                color: $text;
+            }
+        }
+    }
+}
+
+/**************************
+header slider
+**************************/
+.slide {
+    .carousel-caption {
+        bottom: 38%;
+        h2 {
+            letter-spacing: 1px;
+            font-weight: 500 !important;
+        }
+    }
+}
+
+/**************************
+popular
+**************************/
+.popular {
+    article {
+        a {
+        color: $text;
+        transition: $transition;
+        &:hover {
+            text-decoration: none;
+            background: $blue;
+            color: $white;
+        }
+            div {
+                overflow: hidden;
+                img {
+                    transition: $transition;
+                }
+                img:hover {
+                    transform: scale(1.1);
+                }
+            }
+            h5 {
+                text-align: center;
+                margin-bottom: 0;
+                padding: 10px 0;
+            }
+        }
+    }
+}
+
+/**************************
+new products
+**************************/
+.newProducts {
+    article {
+        a {
+            display: inline-block;
+            color: $text;
+            border: 1px solid $text;
+            margin-left: 5px;
+            transition: $transition;
+            &:hover {
+                background: $blue;
+                color: $white;
+            }
+        }
+    }
+    article:last-child {
+        a:hover {
+            background: transparent;
+            color: inherit;
+            text-decoration: none;
+        }
+        .text {
+            text-align: center;
+            padding: 25px 35px;
+            .stars {
+                color: $text;
+                opacity: 0.4;
+            }
+            .price {
+                span:first-child {
+                    text-decoration: line-through;
+                }
+                span:last-child {
+                    color: $blue;
+                }
+            }
+        }
+    }
+}
+
+/**************************
+footer
+**************************/
+footer {
+    background-color: $lightgray;
+    .container {
+        h4 {
+            font-size: 1rem;
+            text-transform: uppercase;
+        }
+        .col-md-4 {
+            form {
+                margin-bottom: 15px;
+                input {
+                    padding: 5px;
+                }
+                .btn-primary {
+                    background: $blue;
+                    &:hover {
+                        background: $blue;
+                    }
+                }
+            }
+            a {
+                .fab {
+                    color: $text;
+                    background: $white;
+                    padding: 8px;
+                    border: 1px solid $text;
+                    border-radius: 50%;
+                    transition: $transition;
+                    &:hover {
+                        background: $blue;
+                        color: $white;
+                    }
+                }
+            }
+        }
+        .col-md-3 {
+            .fas {
+                color: $text;
+                opacity: 0.6;
+            }
+        }
+        div:last-child {
+            border-top: 1px solid #dee2e6;
+        }
+        ul {
+            padding-left: 0;
+            li {
+                margin-bottom: 10px;
+                a {
+                    color: $text;
+                    font-size: 0.9rem;
+                    text-decoration: none !important;
+                }
+            }
+        }
+    }
+}
+
+/**************************
+bottom bar
+**************************/
+.bottomBar  {
+    background-color: #343a40;
+    padding-top: 1rem;
+    p {
+        color: $white;
+    }
+    a {
+        color: $white;
+        text-decoration: underline;
+        transition: $transition;
+        &:hover {
+            color: $blue;
+        }
+    }
+}

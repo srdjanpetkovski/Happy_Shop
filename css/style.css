@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+/**************************
+variables
+**************************/
+/**************************
+basic styles
+**************************/
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: #595a5a;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/**************************
+mixins
+**************************/
+/**************************
+topBar
+**************************/
+.topBar {
+  background-color: #2080be;
+}
+.topBar a {
+  color: #fff;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+/**************************
+navbar
+**************************/
+.navbar .navbar-brand img {
+  width: 100px;
+}
+.navbar .nav-link {
+  text-transform: uppercase;
+  font-weight: 500;
+  transition: 0.3s linear;
+}
+.navbar .nav-link .fas {
+  color: #ef7e22;
+  transition: 0.3s linear;
+}
+.navbar .nav-link .fas:hover {
+  color: #595a5a;
+}
+
+/**************************
+header slider
+**************************/
+.slide .carousel-caption {
+  bottom: 38%;
+}
+.slide .carousel-caption h2 {
+  letter-spacing: 1px;
+  font-weight: 500 !important;
+}
+
+/**************************
+popular
+**************************/
+.popular article a {
+  color: #595a5a;
+  transition: 0.3s linear;
+}
+.popular article a:hover {
+  text-decoration: none;
+  background: #2080be;
+  color: #fff;
+}
+.popular article a div {
+  overflow: hidden;
+}
+.popular article a div img {
+  transition: 0.3s linear;
+}
+.popular article a div img:hover {
+  transform: scale(1.1);
+}
+.popular article a h5 {
+  text-align: center;
+  margin-bottom: 0;
+  padding: 10px 0;
+}
+
+/**************************
+new products
+**************************/
+.newProducts article a {
+  display: inline-block;
+  color: #595a5a;
+  border: 1px solid #595a5a;
+  margin-left: 5px;
+  transition: 0.3s linear;
+}
+.newProducts article a:hover {
+  background: #2080be;
+  color: #fff;
+}
+.newProducts article:last-child a:hover {
+  background: transparent;
+  color: inherit;
+  text-decoration: none;
+}
+.newProducts article:last-child .text {
+  text-align: center;
+  padding: 25px 35px;
+}
+.newProducts article:last-child .text .stars {
+  color: #595a5a;
+  opacity: 0.4;
+}
+.newProducts article:last-child .text .price span:first-child {
+  text-decoration: line-through;
+}
+.newProducts article:last-child .text .price span:last-child {
+  color: #2080be;
+}
+
+/**************************
+footer
+**************************/
+footer {
+  background-color: #f2f2f2;
+}
+footer .container h4 {
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+footer .container .col-md-4 form {
+  margin-bottom: 15px;
+}
+footer .container .col-md-4 form input {
+  padding: 5px;
+}
+footer .container .col-md-4 form .btn-primary {
+  background: #2080be;
+}
+footer .container .col-md-4 form .btn-primary:hover {
+  background: #2080be;
+}
+footer .container .col-md-4 a .fab {
+  color: #595a5a;
+  background: #fff;
+  padding: 8px;
+  border: 1px solid #595a5a;
+  border-radius: 50%;
+  transition: 0.3s linear;
+}
+footer .container .col-md-4 a .fab:hover {
+  background: #2080be;
+  color: #fff;
+}
+footer .container .col-md-3 .fas {
+  color: #595a5a;
+  opacity: 0.6;
+}
+footer .container div:last-child {
+  border-top: 1px solid #dee2e6;
+}
+footer .container ul {
+  padding-left: 0;
+}
+footer .container ul li {
+  margin-bottom: 10px;
+}
+footer .container ul li a {
+  color: #595a5a;
+  font-size: 0.9rem;
+  text-decoration: none !important;
+}
+
+/**************************
+bottom bar
+**************************/
+.bottomBar {
+  background-color: #343a40;
+  padding-top: 1rem;
+}
+.bottomBar p {
+  color: #fff;
+}
+.bottomBar a {
+  color: #fff;
+  text-decoration: underline;
+  transition: 0.3s linear;
+}
+.bottomBar a:hover {
+  color: #2080be;
+}
+
+/*# sourceMappingURL=style.css.map */
